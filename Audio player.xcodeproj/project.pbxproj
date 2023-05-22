@@ -44,6 +44,7 @@
 		440F18EB2A190B54004AB8E0 /* Audio playerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Audio playerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		440F18EF2A190B54004AB8E0 /* Audio_playerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio_playerUITests.swift; sourceTree = "<group>"; };
 		440F18F12A190B54004AB8E0 /* Audio_playerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio_playerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		447739322A1C2CF700923555 /* Audio-player-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Audio-player-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +95,7 @@
 		440F18D32A190B53004AB8E0 /* Audio player */ = {
 			isa = PBXGroup;
 			children = (
+				447739322A1C2CF700923555 /* Audio-player-Info.plist */,
 				440F18D42A190B53004AB8E0 /* Audio_playerApp.swift */,
 				440F18D62A190B53004AB8E0 /* ContentView.swift */,
 				440F18D82A190B54004AB8E0 /* Assets.xcassets */,
@@ -420,9 +422,9 @@
 				DEVELOPMENT_TEAM = XSRM79PMHN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Audio-player-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -449,9 +451,9 @@
 				DEVELOPMENT_TEAM = XSRM79PMHN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Audio-player-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
