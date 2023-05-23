@@ -25,6 +25,8 @@ struct ContentView: View {
             
             Text("What To Do (&Me Remix)")
             Text("Guy Gerber")
+            ProgressView(value: /*@START_MENU_TOKEN@*/0.5/*@END_MENU_TOKEN@*/)
+            
             Spacer()
             HStack {
                 Button {
