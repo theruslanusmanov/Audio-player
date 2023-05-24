@@ -24,10 +24,47 @@ struct ContentView: View {
                 .frame(width: 300, height: 300)
             
             Text("What To Do (&Me Remix)")
+                .font(.title)
             Text("Guy Gerber")
-            ProgressView(value: /*@START_MENU_TOKEN@*/0.5/*@END_MENU_TOKEN@*/)
+                .foregroundColor(.gray)
             
             Spacer()
+            
+            ProgressView(value: /*@START_MENU_TOKEN@*/0.5/*@END_MENU_TOKEN@*/)
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("Label")
+                        .font(.caption)
+                    Text("Rumors")
+                        .font(.title)
+                }
+                Spacer()
+                VStack(alignment: .leading) {
+                    Text("BPM")
+                        .font(.caption)
+                    Text("122")
+                        .font(.title)
+                }
+            }
+            .foregroundColor(.gray)
+            .padding(20)
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("Genre")
+                        .font(.caption)
+                    Text("Melodic House & Techno")
+                        .font(.title)
+                }
+                Spacer()
+                VStack(alignment: .leading) {
+                    Text("Key")
+                        .font(.caption)
+                    Text("8A")
+                        .font(.title)
+                }
+            }
+            .foregroundColor(.gray)
+            .padding(20)
             HStack {
                 Button {
                     print("PLAY")
