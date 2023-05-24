@@ -30,7 +30,7 @@ struct ContentView: View {
             
             Spacer()
             
-            ProgressView(value: /*@START_MENU_TOKEN@*/0.5/*@END_MENU_TOKEN@*/)
+            ProgressView(value: 0.5)
             HStack {
                 VStack(alignment: .leading) {
                     Text("Label")
@@ -65,39 +65,63 @@ struct ContentView: View {
             }
             .foregroundColor(.gray)
             .padding(20)
-            HStack {
-                Button {
-                    print("PLAY")
-                } label: {
-                    Image(systemName: "text.line.first.and.arrowtriangle.forward")
+            VStack(spacing: 0) {
+                HStack(spacing: -1) {
+                    Button {
+                        print("PLAY")
+                    } label: {
+                        Image(systemName: "text.line.first.and.arrowtriangle.forward")
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .border(.black, width: 1)
+                    Button {
+                        print("PLAY")
+                    } label: {
+                        Image(systemName: "backward.end.fill")
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .border(.black, width: 1)
+                    Button {
+                        print("PLAY")
+                    } label: {
+                        Image(systemName: "play.fill")
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .border(.black, width: 1)
+                    .foregroundColor(.black)
+                    .background(Color("AccentColor"))
+                    Button {
+                        print("PLAY")
+                    } label: {
+                        Image(systemName: "forward.end.fill")
+                    }
+                    .frame(
+                        minWidth: 0,
+                        maxWidth: .infinity,
+                        minHeight: 0,
+                        maxHeight: .infinity
+                    )
+                    .border(.black, width: 1)
+                    Button {
+                        print("PLAY")
+                    } label: {
+                        Image(systemName: "ellipsis")
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .border(.black, width: 1)
                 }
-                Button {
-                    print("PLAY")
-                } label: {
-                    Image(systemName: "backward.end.fill")
-                }
-                Button {
-                    print("PLAY")
-                } label: {
-                    Image(systemName: "play.fill")
-                }
-                .foregroundColor(.black)
-                Button {
-                    print("PLAY")
-                } label: {
-                    Image(systemName: "forward.end.fill")
-                }
-                Button {
-                    print("PLAY")
-                } label: {
-                    Image(systemName: "ellipsis")
-                }
+                .background(Color("DefaultColor"))
+                .frame(maxWidth: .infinity)
+                .frame(height: 75)
+                .foregroundColor(Color("TextColor"))
+                HStack{}
+                    .frame(maxWidth: .infinity)
+                    .frame(height: geometry.safeAreaInsets.bottom)
+                    .background(Color("DefaultColor"))
             }
             
-            .frame(maxWidth: .infinity)
-            .frame(height: 75)
-            .background(Color("AccentColor"))
-            .foregroundColor(.black)
+            
+            
         }
         .padding(.top, 75)
         .ignoresSafeArea()
